@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First Webpage</title>
+    <link rel="stylesheet" type="text/css" href="page.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var storedHTML = "";
+    </script>
+</head>
+
+<body onload="storedHTML = $('#content').html();">
+    <header id="uhead">
+        <div>
+            <img id="avatar" alt="my avatar" src="https://pickaface.net/gallery/avatar/unr_admin_171016_2225_zewhi.png">
+        </div>
+        <div id="Title">
+            <h1 id="myh1">Welcome to my magnificent home page</h1>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a class="active" href="#presentation">My profile</a>
+        <a href="#subject">My subject</a>
+        <a href="http://www.hw.ac.uk">My university</a>
+        <span onclick=" storedHTML = $('#content').html(); $('#content').load('https\://f28wp.github.io');"> The best course I ever had!</span>
+        <span onclick="$('#content').html(storedHTML);"> Forget the best course I ever had!</span>
+    </nav>
+    <div id="container">
+        <div id="content">
+            <section id="presentation" onclick="window.location.hash='uhead';">
+                <h2>My profile</h2>
+                <div id="profile">
+                    <p>I am student at <a href="http://www.hw.ac.uk">Heriot Watt univeristy. </a> I study second year BSc Computer Science. Next year, I will start my Aritificial Intelligence specialism... I already have some ideas about my Honors projects.
+                        I would like to study Machine learning applied to health. My idea is to develop an intelligent system that help elder people prevent dementia. The system will monitor their brain activity, and many physiological indicators. The
+                        system learns the needs of the person and recommends combined congitive and physical activity, such as dancing!</p>
+                </div>
+                <div>
+                    <img id="photo" src="https://tineye.com/images/widgets/mona.jpg">
+                </div>
+            </section>
+            <article id="subject" onclick="window.location.hash='uhead';">
+                <h2>History of Computer science</h2>
+                <p>Mechanical analog computer devices appeared again a thousand years later in the medieval Islamic world and were developed by Muslim astronomers, such as the mechanical geared astrolabe by Abū Rayhān al-Bīrūnī, and the torquetum by Jabir
+                    ibn Aflah. According to Simon  Singh, <span class="bold">Muslim mathematicians</span> also made important advances in cryptography, such as the development of cryptanalysis and frequency analysis by Alkindus. Programmable machines
+                    were also invented by Muslim engineers, such as the automatic flute player by the Banū Mūsā brothers, and Al-Jazari's programmable humanoid automata and castle clock, which is considered to be the first programmable analog computer.
+                    <BR>
+                    <BR>Technological artifacts of similar complexity appeared in 14th century Europe, with mechanical astronomical clocks. When John Napier discovered logarithms for computational purposes in the early 17th century,[citation needed] there
+                    followed a period of considerable progress by inventors and scientists in making calculating tools. In 1623 Wilhelm Schickard designed a calculating machine, but abandoned the project, when the prototype he had started building was
+                    destroyed by a fire in 1624. Around 1640, <span class="bold">Blaise Pascal</span>, a leading French mathematician, constructed a mechanical adding device based on a design described by Greek mathematician Hero of Alexandria. Then in
+                    1672 Gottfried Wilhelm Leibniz invented the Stepped Reckoner which he completed in 1694.
+                    <BR>
+                    <BR>In 1837 <span class="bold">Charles Babbage</span> first described his Analytical Engine which is accepted as the first design for a modern computer. The analytical engine had expandable memory, an arithmetic unit, and logic processing
+                    capabilities able to interpret a programming language with loops and conditional branching. Although never built, the design has been studied extensively and is understood to be Turing equivalent. The analytical engine would have had
+                    a memory capacity of less than 1 kilobyte of memory and a clock speed of less than 10 Hertz. </p>
+            </article>
+        </div>
+        <div id="side">
+            <aside class="menu">
+                <h2>Leisure</h2>
+                <p>On free time, I go to </p>
+                <div>
+                    <a href="https://www.dubaichess.ae/"><img id="chess" src="http://www.dubaichess.ae/wp-content/uploads/2015/05/DCC-LOGO-91x120.png">Chess club</a>
+                    <a href="https://www.amazon.ae/"><img id="chess" src="https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png">Shopping</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
