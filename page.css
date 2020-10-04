@@ -146,3 +146,14 @@ article {
 #chess {
     width: 30%;
 }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(95, 13, 13);
+    color: white;
+    text-align: center;
+}
