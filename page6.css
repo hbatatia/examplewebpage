@@ -10,7 +10,6 @@
 /*------------------formatting the avatar-------*/
 
 #avatar {
-    float: left;
     width: 50%;
     max-width: 100%;
     max-height: 100%;
@@ -29,18 +28,11 @@
 }
 
 
-/*------------------position of the title div-------*/
-
-#Title {
-    float: right;
-}
-
-
 /*-----------------menu formatting---------------------------------------------------------*/
 
 .menu {
-    overflow: hidden;
     background-color: #333;
+    overflow: hidden;
 }
 
 
@@ -72,6 +64,22 @@
 }
 
 
+/*--------heading within menu----*/
+
+.menu h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+/*---------------the active/first link-------*/
+
+.menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
 /*----------text that has behaviour-------*/
 
 .menu span {
@@ -92,29 +100,12 @@
 }
 
 
-/*----------text when active-------*/
-
-.menu span.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-
-/*--------heading within menu----*/
-
-.menu h1 {
-    text-align: center;
-    color: #FFFFFF;
-}
-
-
 /*-----------------content formatting-------------------------*/
 
 
 /*-----------------overall container-------------------------*/
 
 #container {
-    /*width: 450px;*/
     margin: 0 auto;
     position: relative;
 }
@@ -142,19 +133,18 @@
 /*----------profile div-------*/
 
 #profile {
-    float: left;
     width: 80%;
-    display: block;
     overflow: auto;
-    /*height: auto;*/
+    display: block;
+    float: left;
 }
 
 
 /*----------photo image size-------*/
 
 #photo {
-    display: block;
     width: 10%;
+    display: block;
 }
 
 
@@ -179,21 +169,16 @@ article {
 /*-----------------sidebar------------------------*/
 
 #side {
-    /*width: 200px;
-    background-color: #e6e6fa;
-    height: 100%;
-    float: right;
-    */
-    width: 160px;
-    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-x: hidden;
     color: white;
     margin-right: 50px;
     margin-top: 20px;
+    width: 160px;
+    overflow-x: hidden;
+    position: absolute;
 }
 
 
@@ -207,13 +192,13 @@ article {
 /*-----------------sidebar------------------------*/
 
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(54, 50, 50);
     color: white;
     text-align: center;
+    position: fixed;
 }
 
 

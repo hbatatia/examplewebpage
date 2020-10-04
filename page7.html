@@ -3,15 +3,12 @@
 
 <head>
     <title>First Webpage</title>
-    <link rel="stylesheet" type="text/css" href="page.css" media="all" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="page6.css" media="all" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        var storedHTML = "";
-    </script>
 </head>
 
-<body onload="storedHTML = $('#content').html();">
+<body>
     <header id="uhead">
         <div>
             <img id="avatar" alt="my avatar" src="https://pickaface.net/gallery/avatar/unr_admin_171016_2225_zewhi.png">
@@ -20,28 +17,26 @@
             <h1 id="myh1">Welcome to my magnificent home page</h1>
         </div>
     </header>
-
     <nav class="menu">
-        <a class="active" href="#presentation">My profile</a>
-        <a href="#subject">My subject</a>
+        <a class="active">My profile</a>
+        <a class="subject">My subject</a>
         <a href="http://www.hw.ac.uk">My university</a>
-        <span onclick=" storedHTML = $('#content').html(); $('#content').load('https\://f28wp.github.io');"> The best course I ever had!</span>
-        <span onclick="$('#content').html(storedHTML);"> Forget the best course I ever had!</span>
+        <span onclick=" $('#content').load('https\://f28wp.github.io');"> The best course I ever had!</span>
     </nav>
     <div id="container">
         <div id="content">
-            <section id="presentation" onclick="window.location.hash='uhead';">
+            <section id="presentation">
                 <h2>My profile</h2>
                 <div id="profile">
                     <p>I am student at <a href="http://www.hw.ac.uk">Heriot Watt univeristy. </a> I study second year BSc Computer Science. Next year, I will start my Aritificial Intelligence specialism... I already have some ideas about my Honors projects.
                         I would like to study Machine learning applied to health. My idea is to develop an intelligent system that help elder people prevent dementia. The system will monitor their brain activity, and many physiological indicators. The
                         system learns the needs of the person and recommends combined congitive and physical activity, such as dancing!</p>
                 </div>
-                <div>
+                <div id="picture">
                     <img id="photo" src="https://tineye.com/images/widgets/mona.jpg">
                 </div>
             </section>
-            <article id="subject" onclick="window.location.hash='uhead';">
+            <article id="subject">
                 <h2>History of Computer science</h2>
                 <p>Mechanical analog computer devices appeared again a thousand years later in the medieval Islamic world and were developed by Muslim astronomers, such as the mechanical geared astrolabe by Abū Rayhān al-Bīrūnī, and the torquetum by Jabir
                     ibn Aflah. According to Simon  Singh, <span class="bold">Muslim mathematicians</span> also made important advances in cryptography, such as the development of cryptanalysis and frequency analysis by Alkindus. Programmable machines
